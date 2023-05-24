@@ -53,11 +53,18 @@ btnEl.addEventListener("click", function(){
     let inputTextareaValue = firstbtn1+" "+inputEl.value +" "+ secondbtn1 
     push(MessageCorrectorDB, inputTextareaValue)
     inputEl.value = ""
+    clearfromandtoinputfields()
 })
 
 function clearinputTextareaValue()
 {
     messageEl.innerHTML = ""
+}
+
+function clearfromandtoinputfields()
+{
+     frombtnEl.value = ""
+     tombtnEl.value = ""
 }
 
 
